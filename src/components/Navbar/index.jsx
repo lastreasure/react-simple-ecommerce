@@ -1,9 +1,15 @@
 import React from 'react';
-import { Nav } from './NavbarElements';
+import * as Styled from './NavbarElements';
 
-const Navbar = () => (
+const Navbar = ({ toggle }) => (
   <>
-    <Nav>Nav</Nav>
+    <Styled.Nav>
+      <Styled.NavLink to="/">NavItem1</Styled.NavLink>
+      <Styled.NavIcon onClick={toggle}>
+        <p> Menu </p>
+        <Styled.Bars />
+      </Styled.NavIcon>
+    </Styled.Nav>
   </>
 );
 

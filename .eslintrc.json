@@ -6,6 +6,8 @@
     "rules": {
         "prettier/prettier": "warn",
         "no-unused-vars" : "warn",
-        "import/prefer-default-export" : "off"
+        "import/prefer-default-export" : "off",
+        "arrow-body-style": "off",
+        "react/prop-types": "off"
     }
 }
